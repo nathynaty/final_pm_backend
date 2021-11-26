@@ -46,6 +46,7 @@ class FilepicsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def filepic_params
-      params.require(:filepic).permit(:name, :picture, :geolocation, :devicetype)
+      params.require(:filepic).permit(:name, :picture, :geolocation, :devicetype, :description)
     end
 end
+
